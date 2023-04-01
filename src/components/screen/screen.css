@@ -1,0 +1,146 @@
+.table{
+    width: 95%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.th{
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 4px;
+    background-color: aliceblue;
+    
+}
+
+.td{
+    transition: 0.4s;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: larger;
+    box-shadow: rgba(0, 0, 0, 0.267) 1px 1px 2px 2px;
+    margin: 8px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.td:hover{
+    transform: scale(0.98);
+    background-color: rgba(189, 189, 189, 0);
+    color: rgb(255, 255, 255);
+   
+}
+.screenButton{
+ font-weight: bold;
+ border: none;
+ border-radius: 4px;
+ background-color: rgb(255, 255, 255);
+ margin-top: 12px;
+ margin-bottom: 12px;
+ padding: 8px;
+ cursor: pointer;
+}
+.screenButton:hover{
+    background-color: rgb(102, 204, 0);
+    color: white;
+}
+
+.navBar{
+    background-color: brown;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+}
+.screensBox{
+    height: 68vh;
+    overflow: auto;
+
+}
+.serachBar{
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid white;
+   
+}
+.serachBar:hover{
+    border: 2px solid rgb(25, 216, 0);
+}
+.dropdownBox{
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:200%;
+}
+.navFirst{
+    display: flex;
+    justify-content: space-between;
+}
+.navSecond{
+    display: flex;
+    justify-content: center;
+}
+.refreshButton{
+    cursor: pointer;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    aspect-ratio: 1/1;
+    transition: 0.4s;
+}
+.refreshButton:active{
+    transform: rotate(300deg);
+}
+.globalFilterLabel{
+    color: white;
+    font-weight: bold;
+}
+.profileImg{
+    height:40px;
+}
+.footer{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 12px;
+    margin: auto;
+    border-radius: 8px;
+   
+}
+@media(max-width:835px){
+    .navSecond{
+        display: block;
+        
+    }
+    .dropdownBox{
+       margin-top: 12px;
+        margin-left:10%;
+    }
+    .screensBox{
+        height: 60vh;
+        
+    
+    }
+}
+
+@media(max-width:650px){
+    .footer{
+   
+        margin-top: 12px;
+       
+    }
+}
+
+@media(max-width:350px){
+    .screensBox{
+        height: 55vh;
+    }
+    .footer{
+        padding: 8px;
+        padding-left: 0%;
+        padding-right: 0%;
+       
+    }
+}
